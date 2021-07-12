@@ -2,8 +2,8 @@
   <div id="app">
      <Header />
      <Main />
-     <Footer /> 
      <TopFooter />
+     <Footer /> 
  
   </div>
 </template>

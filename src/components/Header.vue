@@ -50,6 +50,7 @@ export default {
                         padding:0px 15px;
                         font-size: 13px;
                         font-weight: bold;
+                         cursor: pointer;
                         &:hover{
                             color: blue;
                             border-bottom: 1px blue solid;
