@@ -18,7 +18,7 @@
                 <span>COMIC SHOP LOCATOR</span>
             </div>
             <div>
-                 <img src="../assets/buy-comics-subscriptions.png" alt="subscriptions">
+                 <img src="../assets/buy-dc-power-visa.svg" alt="subscriptions">
                  <span>DC POWER VISA</span>
                 <!-- <img src="../assets/buy-dc-power-visa-svg" alt="power-visa"> -->
             </div>

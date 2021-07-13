@@ -1,7 +1,8 @@
 <template>
   <div id="app">
      <Header />
-     <Main />
+     <!-- prendiamo il jsons dalla funzione (comics in comics) e lo mandiamo al main-->
+     <Main :comics="comics"/> 
      <TopFooter />
      <Footer /> 
  
@@ -9,20 +10,26 @@
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import Main from '@/components/Main.vue'
-import Footer from '@/components/Footer.vue'
-import TopFooter from '@/components/TopFooter.vue'
+import Header from '@/components/Header.vue' //importiamo il header
+import Main from '@/components/Main.vue' //importiamo il main
+import Footer from '@/components/Footer.vue' //importiamo il footer
+import TopFooter from '@/components/TopFooter.vue' //importiamo il top footer
+import comicsJson from './jsons/dc-comics.json' //importiamo il jsons
 
 
 export default {
   name: 'App',
-  components: {
+  components: { //elenchiamo i components importati!
     Header,
     Main,
     Footer,
     TopFooter
-  }
+  },
+  data: function() { //creiamo un function che ci ritornera il jsons perche nn e un components!
+    return {
+      comics: comicsJson,
+    };
+  },
 }
 </script>
 
