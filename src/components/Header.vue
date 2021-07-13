@@ -6,8 +6,10 @@
             </div>
             <div class="container-menu">
                 <ul>
-                    <li>CHARACTERS</li>
-                    <li>COMICS</li>
+                    <li v-for="element in nav" :key="element.id">
+                        <a href="#">{{element.name}}</a>
+                    </li>
+                    <!-- <li>COMICS</li>
                     <li>MOVIES</li>
                     <li>TV</li>
                     <li>GAMES</li>
@@ -15,7 +17,7 @@
                     <li>VIDEOS</li>
                     <li>FANS</li>
                     <li>NEWS</li>
-                    <li>SHOP</li>
+                    <li>SHOP</li> -->
                 </ul>
             </div>  
         </div> 
@@ -24,13 +26,59 @@
 
 <script>
 export default {
-    name: "Header"
+    name: "Header",
+    data: function() {
+        return {
+            nav: [
+                {
+                    id: 0,
+                    name: 'CHARACTERS',
+                },
+                {
+                    id: 1,
+                    name: 'COMICS',
+                },
+                {
+                    id: 2,
+                    name: 'MOVIES',
+                },
+                {
+                    id: 3,
+                    name: 'TV',
+                },
+                {
+                    id: 4,
+                    name: 'GAMES',
+                },
+                {
+                    id: 5,
+                    name: 'COLLECTIBLES',
+                },
+                {
+                    id: 6,
+                    name: 'VIDEOS',
+                },
+                {
+                    id: 7,
+                    name: 'FANS',
+                },
+                {
+                    id: 8,
+                    name: 'NEWS',
+                },
+                {
+                    id: 9,
+                    name: 'SHOP',
+                },
+            ]
+        }
+    } 
+    
 }
 </script>
 
 <style lang="scss" scoped>
    .bg-nav{
-       
        .container-nav{
             display: flex;
             justify-content: space-between;
@@ -51,10 +99,15 @@ export default {
                         font-size: 13px;
                         font-weight: bold;
                          cursor: pointer;
-                        &:hover{
-                            color: blue;
-                            border-bottom: 1px blue solid;
-                        }
+                         a{
+                             text-decoration: none;
+                             color: rgb(156, 156, 156);
+
+                            &:hover{
+                                color: rgb(22, 123, 240);
+                                text-decoration: underline;
+                            }
+                         }
                     }   
                 }
             }

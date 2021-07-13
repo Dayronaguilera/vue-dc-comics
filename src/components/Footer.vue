@@ -43,8 +43,8 @@
                     <li><a href="#">MAD Magazine</a></li>
                 </ul>
             </div>
-            <div class="bottom-footer">
-
+            <div class="img-cont-footer">
+                <img src="../assets/dc-logo-bg.png" alt="logo-footer" />
             </div>
         </div>
     </div>
@@ -59,11 +59,23 @@ export default {
 <style lang="scss" scoped>
     .bg-footer{
         background: url(../assets/footer-bg.jpg);
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+
         .container{
             display: flex;
             padding: 50px;
+                .img-cont-footer{
+                    img {
+                        position: absolute;
+                        left: 65%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    } 
+                }
             .menu-container{
-                margin-right: 50px;
+                margin-right: 30px;
                 ul{
                     list-style: none;
                     li{
@@ -80,7 +92,7 @@ export default {
 
                             &:hover {
                                 text-decoration: underline;
-                                color: blue;
+                                color: rgb(12, 99, 199);
                             } 
                         }
                     }

@@ -44,8 +44,12 @@ export default {
             display: flex;
             align-items: center;
             color: white;
+            height: 60px;
+            &:last-child img{
+                height: 40px;
+            }
             img{
-                width: 40px;
+                height: 50px;
                 margin-right: 15px; 
             }
             span{

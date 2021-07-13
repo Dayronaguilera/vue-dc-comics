@@ -9,6 +9,7 @@
                 :price="element.price"
                 :title="element.series"
                 />
+                <button>LOAD MORE</button>
             </div>
         </div>
     </div>
@@ -41,6 +42,16 @@ export default {
             display: flex;
             flex-wrap: wrap; 
             padding: 30px;
+            justify-content: center;
+            button{
+                background: #0c63c7;
+                font-size: 11px;
+                padding: 10px 50px;
+                color: white;
+                font-weight: bold;
+                border: none;
+                margin-top: 20px;
+            }
         }
     }
 
