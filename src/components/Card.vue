@@ -33,6 +33,7 @@ export default {
   }
   span{
     font-size: 15px;
+    text-transform: uppercase;
   }
   h4{
     margin-top: 10px;
